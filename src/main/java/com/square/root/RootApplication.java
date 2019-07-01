@@ -6,11 +6,7 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class RootApplication {
-    private static ApplicationContext applicationContext;
-
     public static void main(String[] args) {
-        applicationContext = SpringApplication.run(RootApplication.class, args);
-
+        ApplicationContext context = SpringApplication.run(RootApplication.class, args);
     }
-
 }

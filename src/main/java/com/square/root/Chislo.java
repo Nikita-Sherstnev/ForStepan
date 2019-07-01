@@ -1,12 +1,8 @@
 package com.square.root;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Data;
 
-import java.io.Serializable;
-
 @Data
-@JsonDeserialize
-public class Chislo implements Serializable {
+public class Chislo {
     private int number;
 }
