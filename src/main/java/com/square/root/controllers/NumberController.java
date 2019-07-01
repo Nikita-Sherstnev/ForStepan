@@ -9,12 +9,16 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class NumberController {
     @Autowired
-    NumberService numberService;
+    private NumberService numberService;
+
+    @GetMapping("/")
+    public void get(){
+        System.out.println("Get request");
+    }
 
     @PostMapping(path = "/", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public Chislo addNumber(@RequestBody Chislo chislo){
-        chislo = numberService.toSquare(chislo);
-        return chislo;
+        return numberService.toSquare(chislo);
     }
 
 }
