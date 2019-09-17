@@ -1,3 +1,3 @@
 # ForStepan
 
-Spring boot with PostgreSQL database.
+Spring boot application with PostgreSQL database.
