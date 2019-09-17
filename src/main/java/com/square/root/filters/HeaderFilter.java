@@ -10,12 +10,12 @@ import java.io.IOException;
 public class HeaderFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-
+        /*
         HttpServletRequest req = (HttpServletRequest) servletRequest;
-        if (req.getHeader("server-key").equals("qwerty"))
-            System.out.println("Все ок.");
-
         if (req.getHeader("server-key").equals("true"))
             filterChain.doFilter(servletRequest, servletResponse);
+
+         */
     }
+
 }

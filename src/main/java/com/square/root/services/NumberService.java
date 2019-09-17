@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 public class NumberService {
     private ChisloRepository chisloRepository;
 
-    public NumberService(ChisloRepository chisloRepository){
+    public NumberService(ChisloRepository chisloRepository) {
         this.chisloRepository = chisloRepository;
     }
 
-    public Chislo toSquare(Chislo c){
-        c.setRes(c.getParam()*c.getParam());
+    public Chislo toSquare(Chislo c) {
+        c.setRes(c.getParam() * c.getParam());
         chisloRepository.save(c);
         return c;
     }
